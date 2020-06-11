@@ -67,7 +67,7 @@ class DynamicAction(object):
 
 
     def _fill_msg(self, msg, values):
-        for k, v in values.iteritems():
+        for k, v in values.items():
             if type(v) is dict:
                 self._fill_msg(getattr(msg, k), v)
             else:
