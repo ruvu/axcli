@@ -7,7 +7,7 @@ catkin_package()
 
 catkin_add_env_hooks(20.axcli SHELLS bash DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env-hooks)
 
-install(PROGRAMS
+catkin_install_python(PROGRAMS
   bin/axcli
   DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 )
