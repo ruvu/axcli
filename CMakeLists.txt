@@ -11,9 +11,3 @@ catkin_install_python(PROGRAMS
   bin/axcli
   DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 )
-
-# generate relay-script for each program
-set(EXECUTABLE ${CMAKE_CURRENT_SOURCE_DIR}/bin/axcli)
-configure_file(${catkin_EXTRAS_DIR}/templates/script.sh.in
-  ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_BIN_DESTINATION}/axcli
-  @ONLY)
